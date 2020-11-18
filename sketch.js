@@ -41,14 +41,14 @@ function draw() {
     textAlign(CENTER);
     text("Anime Trivia", windowWidth/2, 90);
      textSize(24);
-    text("Score: "+score, windowWidth/2, 150);
+    text("Score: "+score, windowWidth/2, 130);
     if(trivia.length > 0){
         textSize(25);
         //Question
         var question = trivia[count].question;
         question = question.replace(/&quot;/g, '"');
         question = question.replace(/&#039;/g, '\'');
-        text(question, windowWidth/2, 250);
+        text(question, windowWidth/2, 180);
         
         //Answers
         
@@ -71,7 +71,7 @@ function draw() {
                 if (fade > 255) fadeAmnt = -1;
 
                 fade += fadeAmnt;
-                text("Press Space to continue", windowWidth/2, 280);
+                text("Press Space to continue", windowWidth/2, 220);
             pop();
             
 
